@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark .svg-icon {
+    filter: invert(99%) sepia(48%) saturate(174%) hue-rotate(195deg) brightness(113%) contrast(96%);
+}

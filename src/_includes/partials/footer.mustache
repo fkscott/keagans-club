@@ -1,0 +1,40 @@
+<footer class="py-4 mx-2">
+    <hr class="my-4 border-stone-300 dark:border-stone-500 sm:mx-auto" />
+    <div class="flex flex-row justify-center">
+        {{>svg/feelsfan}}    
+    </div>
+
+    <span class="block text-sm text-stone-400 dark:text-stone-500 text-center">© 2022 
+    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="transition all hover:text-cyan-600 dark:hover:text-cyan-500">my totally real llc</a>. 
+    all rights reserved
+    </span>
+
+    <script>
+        let darkModeButton = document.getElementById("dark-mode-toggle");
+        let darkModeIcon = document.getElementById("dark-mode-icon");
+
+        function toggleDarkMode() {
+            let documentRoot = document.documentElement;
+            if(documentRoot.classList.contains("dark")) {
+                documentRoot.classList.remove("dark");
+                darkModeIcon.src = "icons/dark.png"
+                localStorage.theme = 'light';
+            }
+            else{
+                documentRoot.classList.add("dark");
+                darkModeIcon.src = "icons/light.png"
+                localStorage.theme = 'dark';
+            }
+
+        }
+        function updateDarkModeIcon() {
+            darkModeButton.addEventListener("click", toggleDarkMode);
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                darkModeIcon.src = "icons/light.png"
+            } else {
+                darkModeIcon.src = "icons/dark.png"
+            }
+        }    
+        window.onload = updateDarkModeIcon();
+    </script>
+</footer>
