@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "npx @11ty/eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --watch",
-    "build:prod": "npx @11ty/eleventy && tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify"
+    "dev": "npx @11ty/eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --watch",
+    "build": "npx @11ty/eleventy && tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
