@@ -22,7 +22,7 @@ projects:
         link-text: "try the app"
     -
         title: color quiz
-        link: https://github.com/fkscott/colorquiz
+        link: https://colorquiz.vercel.app/ 
         icon: react
         description: A quiz to guess the hex code of he color shown on the screen. Originally based on a React interview question, but expanded with a little bit more functionality.
         link-text: "view source"
