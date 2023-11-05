@@ -1,75 +1,49 @@
 <!doctype html>
 <html class="scroll-smooth">
-  {{ >partials/head }}
-  <body class="mx-auto bg-stone-100 text-neutral-900 dark:bg-stone-900 dark:text-neutral-50 max-w-screen-md">
-    <div id="page-content-wrapper" class="space-y-20 mx-auto">
-    {{ >partials/header }}
+{{ >partials/head }}
 
-        <section id="intro-section" class="flex">
-            <div class="mx-auto space-y-5">
-                <h1 class="font-display text-5xl text-center">{{headline}}</h1>
-                <p class="font-body text-center text-xl mx-3">
+<body>
+    <div id="page-content-wrapper">
+        {{ >partials/header }}
+
+        <section id="intro-section">
+            <div>
+                <h1>{{headline}}</h1>
+                <p>
                     {{subheading}}
                 </p>
-                <div class="flex sm:flex-row flex-col sm:justify-around items-center sm:space-y-0 space-y-2">
-                {{ #heading-links }}
-                    <a href="{{link}}" id="{{ title }}-link" target="_blank"
-                    class="font-mono flex justify-end items-center transition-all hover:text-cyan-600 dark:hover:text-cyan-500 text-base">
-                    {{link-text}}{{>svg/linkarrow}} </a>
-                {{/heading-links}}
+                <div>
+                    {{ #heading-links }}
+                    {{ >partials/heading-link }}
+                    {{/heading-links}}
 
                 </div>
-            <div>
-      </section>
-      
-      <section id="projects-section" class="flex flex-col mx-2">
-        <h2 class="font-display text-3xl text-left">Projects</h2>
-        <hr class="border-stone-300 dark:border-stone-500 my-4">
-        <div id="projects-list-wrapper" class="mt-5 space-y-5">
+                <div>
+        </section>
 
-          {{#projects}}
-          <div id="project-{{ title }}" class="flex flex-col bg-stone-50 dark:bg-stone-800 rounded-md mx-2 p-5 space-y-3">
-            <h3 class="font-display flex items-center text-2xl ">
-                  <img class="inline w-6 h-6 mr-2 svg-icon" src="icons/{{icon}}.svg"></img>
-                {{ title }}
-            </h3>
-            <div id="{{ title }}-description">
-                <p class="font-body text-base p-2"> 
-                  {{description}}
-                </p>
+        <section id="projects-section" class="flex flex-col mx-2">
+            <h2 class=>Projects</h2>
+            <hr>
+            <div id="projects-list-wrapper">
+
+                {{#projects}}
+                {{>partials/card}}
+                {{/projects}}
             </div>
 
-            <a href="{{link}}" id="{{ title }}-link" target="_blank"
-            class="font-mono flex justify-end items-center transition-all hover:text-cyan-600 dark:hover:text-cyan-500 text-base">
-            {{link-text}}{{>svg/linkarrow}} </a>
-          </div>
-          {{/projects}}
-        </div>
+        </section>
 
-    </section>
-
-      <section id="about-section" class="flex flex-col mx-2">
-        <h2 class="font-display text-3xl text-left">About</h2>
-        <hr class="border-stone-300 dark:border-stone-500 my-4">
-        <div id="about-list-wrapper" class="mt-5 space-y-5">
-            {{#about}}
-            <div id="project-{{ title }}" class="flex flex-col bg-stone-50 dark:bg-stone-800 rounded-md mx-2 p-5 space-y-3">
-                <h3 class="font-display flex items-center text-2xl "> {{ section }} </h3>
-                <p class="font-body text-base p-2"> 
-                  {{text}}
-                </p>
-
-                {{#link}}
-                <a href="{{link}}" id="{{ title }}-link" target="_blank"
-                class="font-mono flex justify-end items-center transition-all hover:text-cyan-600 dark:hover:text-cyan-500 text-base">
-                {{link-text}}{{>svg/linkarrow}} </a>
-                {{/link}}
+        <section id="about-section" class="flex flex-col mx-2">
+            <h2>About</h2>
+            <hr>
+            <div id="about-list-wrapper">
+                {{#about}}
+                {{>partials/card}}
+                {{/about}}
             </div>
-            {{/about}}
-        </div>
-
-    </section>
+        </section>
     </div>
-  {{>partials/footer}}
-  </body>
+    {{>partials/footer}}
+</body>
+
 </html>
