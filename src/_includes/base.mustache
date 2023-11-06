@@ -1,49 +1,32 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html>
 {{ >partials/head }}
 
 <body>
-    <div id="page-content-wrapper">
-        {{ >partials/header }}
+    {{ >partials/header }}
 
-        <section id="intro-section">
-            <div>
-                <h1>{{headline}}</h1>
-                <p>
-                    {{subheading}}
-                </p>
-                <div>
-                    {{ #heading-links }}
-                    {{ >partials/heading-link }}
-                    {{/heading-links}}
-
-                </div>
-                <div>
-        </section>
-
-        <section id="projects-section" class="flex flex-col mx-2">
+    <section id="open_source_contributions_section">
+        <h2>Open Source Contributions</h2>
+        <hr>
+        {{#open-source-contributions}}
+        {{>partials/card}}
+        {{/open-source-contributions}}
+        <section id="projects-section">
             <h2 class=>Projects</h2>
             <hr>
-            <div id="projects-list-wrapper">
-
-                {{#projects}}
-                {{>partials/card}}
-                {{/projects}}
-            </div>
-
+            {{#projects}}
+            {{>partials/card}}
+            {{/projects}}
         </section>
 
-        <section id="about-section" class="flex flex-col mx-2">
+        <section id="about-section">
             <h2>About</h2>
             <hr>
-            <div id="about-list-wrapper">
-                {{#about}}
-                {{>partials/card}}
-                {{/about}}
-            </div>
+            {{#about}}
+            {{>partials/card}}
+            {{/about}}
         </section>
-    </div>
-    {{>partials/footer}}
+        {{>partials/footer}}
 </body>
 
 </html>

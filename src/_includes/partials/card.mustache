@@ -1,7 +1,9 @@
-<div id="project-{{ title }}">
+<article id="project-{{ title }}">
     <h3>
-        {{#icon}}
-        <img src="icons/{{icon}}.svg"></img>
+        {{#icon}}   
+        <svg>
+            <use href="icons/{{icon}}.svg#Layer_1"></use>
+        </svg>
         {{/icon}}
         {{ title }}
     </h3>
@@ -11,6 +13,7 @@
         </p>
     </div>
 
-    <a href="{{link}}" id="{{ title }}-link" target="_blank">
-        {{link-text}}{{>svg/linkarrow}} </a>
-</div>
+    {{#link}}
+        {{ >partials/link }}
+    {{/link}}
+</article>

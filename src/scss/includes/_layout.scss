@@ -1,0 +1,80 @@
+html {
+    color: $color-foreground-primary;
+    background-color: $color-background-primary;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: auto;
+    padding: $spacing-lg;
+    max-width: $layout-max-width;
+    line-height: $layout-body-line-height;
+}
+
+svg {
+    fill: $color-foreground-primary;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    blockquote {
+        margin: $spacing-lg 0;
+        font-size: calc(1.1 * #{$font-size-base});
+        background-color: $color-background-secondary;
+    }
+
+    section {
+        font-size: $font-h4-size;
+        display: flex;
+        a {
+            background-color: $color-background-secondary;
+            padding: $spacing-md $spacing-lg;
+            margin: $spacing-md;
+        }
+    }
+}
+
+section {
+    article {
+        background: $color-background-secondary;
+        padding: $spacing-lg;
+        margin-top: $spacing-lg;
+
+        :not(a) {
+            text-align: left;
+        }
+
+        text-align: end;
+
+        h3 {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: $spacing-md;
+
+            svg {
+                margin-right: $spacing-sm;
+            }
+        }
+
+        a {
+            background-color: $color-background-tertiary;
+            color: $color-accent-primary;
+            padding: $spacing-md $spacing-lg;
+        }
+    }
+
+    svg {
+        width: $svg-icon-size;
+        height: $svg-icon-size;
+    }
+}
+
+footer {
+    text-align: center;
+}

@@ -1,10 +1,11 @@
 <header>
-    <div> 
-        <a href="#"><h1>f. keagan scott</h1></a>
-        <nav>
-            <a href="#projects-section">projects</a>
-            <a href="#about-section">about</a>
-
-        </nav>
-    </div>
+    <h1>f. keagan scott</h1>
+    <blockquote>
+        {{subheading}}
+    </blockquote>
+    <section>
+    {{ #heading-links }}
+        {{ >partials/link }}
+    {{/heading-links}}
+    </section>
 </header>
