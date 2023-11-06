@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve && sass --watch scss:css --style compressed",
-    "build": "npx @11ty/eleventy && sass src/scss:src/css --style compressed"
+    "dev": "sass --watch scss:css --style compressed && npx @11ty/eleventy --serve ",
+    "build": "sass src/scss:src/css --style compressed && npx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
