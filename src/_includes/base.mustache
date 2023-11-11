@@ -5,25 +5,25 @@
 <body>
     {{ >partials/header }}
 
-    <section id="open_source_contributions_section">
+    <section>
         <h2>Open Source Contributions</h2>
         <hr>
         {{#open-source-contributions}}
-        {{>partials/card}}
+            {{>partials/card}}
         {{/open-source-contributions}}
-        <section id="projects-section">
+        <section>
             <h2 class=>Projects</h2>
             <hr>
             {{#projects}}
-            {{>partials/card}}
+                {{>partials/card}}
             {{/projects}}
         </section>
 
-        <section id="about-section">
+        <section>
             <h2>About</h2>
             <hr>
             {{#about}}
-            {{>partials/card}}
+                {{>partials/card}}
             {{/about}}
         </section>
         {{>partials/footer}}
