@@ -1,0 +1,19 @@
+<article id="project-{{ title }}">
+    <h3>
+        {{#icon}}   
+        <svg>
+            <use href="icons/{{icon}}.svg#Layer_1"></use>
+        </svg>
+        {{/icon}}
+        {{ title }}
+    </h3>
+    <div id="{{ title }}-description">
+        <p>
+            {{description}}
+        </p>
+    </div>
+
+    {{#link}}
+        {{ >partials/link }}
+    {{/link}}
+</article>

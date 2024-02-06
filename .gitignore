@@ -5,8 +5,8 @@ node_modules/
 _site/
 
 # ds store stuff
- .DS_Store
- **/.DS_Store
+.DS_Store
+**/.DS_Store
 
 
 
