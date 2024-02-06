@@ -1,7 +1,7 @@
 ---
 title: Frederic Keagan Scott
 
-subheading: "I maintain web apps using JavaScript and Perl. This site contains links to my projects, and to my profiles on GitHub and LinkedIn."
+subheading: "I maintain web apps using Perl and Javascript. This site contains links to my projects, and to my profiles on GitHub and LinkedIn."
 
 heading-links:
   - link: "https://www.linkedin.com/in/fkeagan"
@@ -11,6 +11,12 @@ heading-links:
     link-text: "GitHub projects"
 
 open-source-contributions:
+  - title: missing-css 
+    link: "https://github.com/bigskysoftware/missing/pull/38"
+    icon: sass
+    description: "Fixed build script so JavaScript files could be deployed to the missing-css documentation site."
+    link-text: "view on github"
+
   - title: bike-converters
     link: "https://git.sr.ht/~jonsterling/bike-convertors/commit/e3d2675dac072cfd84f379937e15cbad5c021274"
     icon: gnubash
@@ -39,8 +45,8 @@ projects:
   - title: Color Quiz
     link: "https://colorquiz.vercel.app/"
     icon: react
-    description: "A quiz to guess the hex code of he color shown on the screen. Originally based on a react interview question, but expanded with a little bit more functionality."
-    link-text: "view source"
+    description: "A quiz to guess the hex code of he color shown on the screen. Originally given as a react interview question."
+    link-text: "try the app"
 
   - title: incipiam
     link: https://github.com/fkscott/incipiam
@@ -56,7 +62,7 @@ projects:
 
 about:
   - title: Work Experience
-    description: "I am currently working at ECS Tuning, a site that sells german auto parts. As a Software Engineer, I use Perl, JavaScript, and MySQL to build new features and maintain existing systems. I was also a QA Engineer and a Customer Service Representative at the same company! Visit my LinkedIn profile to see more about my professional skills."
+    description: "I am currently working at ECS Tuning, a site that sells german auto parts. As a Software Engineer, I use Perl, JavaScript, and MySQL to build new features and maintain existing systems. I was also a QA Engineer and a Customer Service Representative at the same company! Visit my LinkedIn profile to see more about my work experience."
     link: "www.linkedin.com/in/fkeagan"
     link-text: "linkedin profile"
 
