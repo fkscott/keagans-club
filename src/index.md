@@ -1,7 +1,7 @@
 ---
 title: Frederic Keagan Scott
 
-subheading: "I maintain web apps using Perl and Javascript. This site contains links to my projects, and to my profiles on GitHub and LinkedIn."
+subheading: "I maintain web apps using Typescript, Vue, and sometimes Perl. This site contains links to my projects, and to my profiles on GitHub and LinkedIn."
 
 heading-links:
   - link: "https://www.linkedin.com/in/fkeagan"
@@ -11,7 +11,7 @@ heading-links:
     link-text: "GitHub projects"
 
 open-source-contributions:
-  - title: missing-css 
+  - title: missing-css
     link: "https://github.com/bigskysoftware/missing/pull/38"
     icon: sass
     description: "Fixed build script so JavaScript files could be deployed to the missing-css documentation site."
@@ -24,10 +24,22 @@ open-source-contributions:
     link-text: "view on sourcehut"
 
 projects:
+  - title: Workflowy Calendar Generator
+    link: https://www.workflowy-calendar-generator.com/
+    icon: javascript
+    description: "Easily generate and paste calendars and dates into the Workflowy app."
+    link-text: "try the app"
+
   - title: Shelf Talker
     link: https://wm-shelf-talker.vercel.app/
     icon: svelte
     description: "A Svelte app to generate shelf talkers for use at the Wine Merchant in Baltimore, Maryland. All processing is done client-side, and uses html2canvas to create data urls to export the generated shelf talkers."
+    link-text: "try the app"
+
+  - title: nounverber59
+    link: "https://nounverber59.vercel.app/"
+    icon: javascript
+    description: "Fun little web page to generate band names like Starflyer59 from a list of predefined nouns and verbs. Grammar is iffy :)"
     link-text: "try the app"
 
   - title: bike-to-html
@@ -41,12 +53,6 @@ projects:
     icon: sass
     description: "Class-less css framework for use with bike-to-html."
     link-text: "view source"
-
-  - title: Color Quiz
-    link: "https://colorquiz.vercel.app/"
-    icon: react
-    description: "A quiz to guess the hex code of he color shown on the screen. Originally given as a react interview question."
-    link-text: "try the app"
 
   - title: incipiam
     link: https://github.com/fkscott/incipiam
@@ -62,7 +68,7 @@ projects:
 
 about:
   - title: Work Experience
-    description: "I am currently working at ECS Tuning, a site that sells german auto parts. As a Software Engineer, I use Perl, JavaScript, and MySQL to build new features and maintain existing systems. I was also a QA Engineer and a Customer Service Representative at the same company! Visit my LinkedIn profile to see more about my work experience."
+    description: "I currently work at Cohen & Company, maintaing internal applications for tax professionals using Vue and Typescript. Previously I wrote Perl to help maintain ECS Tuning's eCommerce platform. Visit my LinkedIn profile to see more about my work experience."
     link: "www.linkedin.com/in/fkeagan"
     link-text: "linkedin profile"
 
